@@ -1,0 +1,7 @@
+#  Editor
+.idea
+
+#  Code
+node_modules
+yarn-error.log
+public
