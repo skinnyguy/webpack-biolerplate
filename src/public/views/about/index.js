@@ -1,4 +1,4 @@
-import Opening from '@/assets/js/Opening'
+import Opening from '@/js/Opening'
 
 Opening('#about-root', ['About Page'])
 

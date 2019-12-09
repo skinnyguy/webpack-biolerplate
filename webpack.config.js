@@ -7,8 +7,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { _extractPath } = require('./util')
 const PATH_DIR = path.join('src', 'public', path.sep)
 
-// Hoyoyoyoyoyoyo
-
 const entry = _extractPath(PATH_DIR, ['.js']).reduce((obj, filePath) => {
   const entryChunkName = filePath.replace(path.extname(filePath), '').replace(PATH_DIR, '')
   obj[entryChunkName] = `./${filePath}`
@@ -69,8 +67,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@' : path.resolve(__dirname, 'src'),
-      components: path.resolve(__dirname, 'src', 'components')
+      '@' : path.resolve(__dirname, 'src')
     }
   },
   plugins: [
