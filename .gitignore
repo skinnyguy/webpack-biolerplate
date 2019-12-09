@@ -1,10 +1,10 @@
-#  Editor
+#  EDITOR
 .idea
 
-#  Code
+#  FOLDER
 node_modules
-yarn-error.log
-public
+build
 
-#  File
+#  FILE
 .env
+yarn-error.log

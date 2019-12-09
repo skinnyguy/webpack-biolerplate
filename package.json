@@ -1,0 +1,37 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerpate for create new website",
+  "main": "src/public/index.js",
+  "private": true,
+  "scripts": {
+    "start:dev": "NODE_ENV=development webpack-dev-server --config ./config/dev.config.js",
+    "start:build": "NODE_ENV=production webpack --config ./config/prod.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.1",
+    "dotenv-webpack": "^1.7.0",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "repository": "https://github.com/skinnyguy/webpack-biolerplate.git",
+  "author": "Adi Hermawan <adidot78@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@skinnyguy/grid-layout": "^1.0.0"
+  }
+}
