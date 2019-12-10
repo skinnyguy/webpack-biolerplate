@@ -12,12 +12,8 @@ module.exports = merge(config, {
     watchContentBase: true,
     stats: {
       assets: true,
-      chunkRelation: false,
       children: false,
       entrypoints: false,
-      usedExports: false,
-      publicPath: false,
-      outputPath: false
     }
   }
 })

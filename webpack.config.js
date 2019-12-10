@@ -31,12 +31,9 @@ module.exports = {
   },
   stats: {
     assets: true,
-    cachedAssets: false,
-    chunkGroups: false,
     children: false,
     entrypoints: false,
     excludeModules: false,
-    logging: "error"
   },
   module: {
     rules: [
