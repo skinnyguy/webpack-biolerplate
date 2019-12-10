@@ -4,6 +4,9 @@
   "description": "Boilerpate for create new website",
   "main": "src/public/index.js",
   "private": true,
+  "dependencies": {
+    "@skinnyguy/grid-layout": "^1.0.0-beta-01"
+  },
   "scripts": {
     "start:dev": "NODE_ENV=development webpack-dev-server --config ./config/dev.config.js",
     "start:build": "NODE_ENV=production webpack --config ./config/prod.config.js"
@@ -26,12 +29,10 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "webpack-messages": "^2.0.4"
   },
   "repository": "https://github.com/skinnyguy/webpack-biolerplate.git",
   "author": "Adi Hermawan <adidot78@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@skinnyguy/grid-layout": "^1.0.0"
-  }
+  "license": "MIT"
 }

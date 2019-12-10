@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WebpackMessages = require('webpack-messages')
 const Dotenv =  require('dotenv-webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { _extractPath } = require('./util')
@@ -27,6 +28,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].bundle.[hash].js'
+  },
+  stats: {
+    assets: true,
+    cachedAssets: false,
+    chunkGroups: false,
+    children: false,
+    entrypoints: false,
+    excludeModules: false,
+    logging: "error"
   },
   module: {
     rules: [
@@ -77,9 +87,13 @@ module.exports = {
     new Dotenv(),
     ...EntryHtmlPlugins,
     new MiniCssExtractPlugin({
-      filename: '[name].min.css',
-      chunkFilename: '[id].min.css',
+      filename: 'style.min.css',
+      chunkFilename: 'vendor.min.css',
       ignoreOrder: false
-    })
+    }),
+    new WebpackMessages({
+      name: 'bundle',
+      logger: str => console.log(`>> ${str}`)
+    }),
   ]
 }

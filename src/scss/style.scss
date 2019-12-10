@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
+@import "~@skinnyguy/grid-layout/css/grid-layout.min.css";
+@import "variable";
 
 html,
 body {
@@ -8,7 +12,55 @@ body {
   margin: 0;
 }
 
-#_root {
-  background-color: rgba(159, 70, 229, 0.58);
-  color: rebeccapurple;
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  color: $background;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+._container {
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark;
+}
+
+code {
+  padding: 0 7px;
+  font-family: 'Fira Code', monospace;
+  &._folder {
+    color: #ff495a;
+  }
+
+  &._scripts {
+    border-radius: 20px;
+    background-color: #dddee5;
+    color: #ff495a;
+  }
+
+  > ._block {
+    display: block;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px 10px;
+  }
+}
+
+pre {
+  display: block;
+  margin: 3rem 0;
+  background-color: #fff;
+  border-radius: 5px;
+
+  code {
+    color: $dark;
+  }
 }

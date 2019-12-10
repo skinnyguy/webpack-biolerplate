@@ -650,10 +650,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@skinnyguy/grid-layout@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@skinnyguy/grid-layout/-/grid-layout-1.0.0.tgz#cb28961926e995eb827cec7316fdae68b3cae5e0"
-  integrity sha512-U+yE8lpEEFYB4FHIPKo2PzwzRp9Y5K4qQRQFaC6GiVvlfgldCUzv7E9yNuNf7SNwImcgBbVwbn2fZYAMJean9Q==
+"@skinnyguy/grid-layout@^1.0.0-beta-01":
+  version "1.0.0-beta-01"
+  resolved "https://registry.yarnpkg.com/@skinnyguy/grid-layout/-/grid-layout-1.0.0-beta-01.tgz#3f58da6c7e82ff446c6025946918b9923778d24a"
+  integrity sha512-ZaadbNTNOEyYfd5WMwC3tTHWewR8di+K6+osOuThJy/WFrNyLt9se1Ysu4IznxG5a5cl7ksSGn38/jeCdCo2Wg==
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -1734,6 +1734,11 @@ console-browserify@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.2.0.tgz#67063cef57ceb6cf4993a2ab3a55840ae8c49336"
   integrity sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA==
+
+console-clear@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/console-clear/-/console-clear-1.1.1.tgz#995e20cbfbf14dd792b672cde387bd128d674bf7"
+  integrity sha512-pMD+MVR538ipqkG5JXeOEbKWS5um1H4LUUccUQG68qpeqBYbzYy79Gh55jkd2TtPdRfUaLWdv6LPP//5Zt0aPQ==
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
@@ -3815,6 +3820,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+
+kleur@^3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
+  integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
@@ -6754,6 +6764,13 @@ webpack-dev-server@^3.9.0:
     ws "^6.2.1"
     yargs "12.0.5"
 
+webpack-format-messages@^2.0.0:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/webpack-format-messages/-/webpack-format-messages-2.0.6.tgz#d8bb0d4fb2e9171efc8a252d6294f29c50d7ecd2"
+  integrity sha512-JOUviZSCupGTf6uJjrxKMEyOawWws566e3phwSyuWBsQxuBU6Gm4QV5wdU8UfkPIhWyhAqSGKeq8fNE9Q4rs9Q==
+  dependencies:
+    kleur "^3.0.0"
+
 webpack-log@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/webpack-log/-/webpack-log-2.0.0.tgz#5b7928e0637593f119d32f6227c1e0ac31e1b47f"
@@ -6768,6 +6785,15 @@ webpack-merge@^4.2.2:
   integrity sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
   dependencies:
     lodash "^4.17.15"
+
+webpack-messages@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/webpack-messages/-/webpack-messages-2.0.4.tgz#96faef65565d8de75f3cf7661c8a45e5ca3741bc"
+  integrity sha512-flG9VZRIKJd+ibJdtG55cp8+CglmEvGQ6uyLLwAxKudO2ws5czl0Giy8wltRCNIx+qNF76hh9UEQNZzkUHnDKw==
+  dependencies:
+    console-clear "^1.0.0"
+    kleur "^3.0.0"
+    webpack-format-messages "^2.0.0"
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
